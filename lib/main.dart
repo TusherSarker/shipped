@@ -12,7 +12,6 @@ import 'package:shipped/screen/welcome/welcome.dart';
 import 'Custom_Widzed/mother_nbbar.dart';
 import 'Iphones/appale_phones.dart';
 import 'home_page.dat.dart';
-import 'ClothList/json_data_list.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {

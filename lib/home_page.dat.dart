@@ -7,7 +7,6 @@ import 'package:shipped/components/carousel_slider.dart';
 import 'package:shipped/components/listview_horizontal.dart';
 import 'Iphones/appale_phones.dart';
 import 'Product list/list_view.dart';
-import 'ClothList/json_data_list.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import '';
 
@@ -28,10 +27,7 @@ class _homepageState extends State<homepage> {
           title: Text("Shipped"),
           actions: [
             IconButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => damiJson()));
-                },
+                onPressed: () {},
                 icon: Icon(Icons.search)),
             IconButton(
                 onPressed: () {

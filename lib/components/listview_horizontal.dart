@@ -40,7 +40,8 @@ class HorizontalListview extends StatelessWidget {
             child: cc(image_location: 'assets/images/accories/accessories.png',
                 image_caption: 'accessories'),
           ),
-          InkWell(onTap: (){},
+          InkWell(onTap: (){
+},
             child: cc(image_location: 'assets/images/accories/dress.png',
                 image_caption: 'dress',),
           )
