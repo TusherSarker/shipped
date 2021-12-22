@@ -10,22 +10,6 @@ class _ClothListState extends State<ClothList> {
   var Product_list = [
 
     {
-      "Name" :'Blazer',
-      "Picture":'assets/images/product/blazer1.jpeg',
-      "Price":'4999',
-      "OldPrice":'7999',
-      "DcPrice":'37%',
-      "Description":''
-    },
-    {
-      "Name" :'Blazer',
-      "Picture":'assets/images/product/blazer2.jpeg',
-      "Price":'6000',
-      "OldPrice":'12000',
-      "DcPrice":'50%',
-      "Description":''
-    },
-    {
       "Name" :'Dress',
       "Picture":'assets/images/product/dress1.jpeg',
       "Price":'4000',

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:shipped/Product%20list/list_view.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 class MotherNavigation extends StatefulWidget {
   const MotherNavigation({Key? key}) : super(key: key);
@@ -22,8 +21,6 @@ class _MotherNavigationState extends State<MotherNavigation> {
       items: <Widget>[
         IconButton(
             onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => listviewclass()));
             },
             icon: Icon(Icons.add, size: 30)),
         Icon(Icons.list, size: 30),

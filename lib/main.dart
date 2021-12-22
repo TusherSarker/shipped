@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shipped/Iphones/iphoneOrder_pageDesign.dart';
 import 'package:shipped/Iphones/iphone_list.dart';
-import 'package:shipped/Product%20list/list_view.dart';
 import 'package:shipped/lists/Accessories/accessories_list.dart';
 import 'package:shipped/screen/image_picker.dart';
 import 'package:shipped/screen/login_screen.dart';

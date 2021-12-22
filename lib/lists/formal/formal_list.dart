@@ -1,36 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:shipped/lists/formal/formal_display.dart';
 
-import 'accessories_display.dart';
-
-class Accessories extends StatelessWidget {
+class FormalList extends StatelessWidget {
   var ProductListtttt = [
     {
-      "Name": 'Blue ps4 Console',
-      "Picture": 'assets/images/Ps/ps4_console_blue_1.png',
-      "Price": '5,500৳',
-      "OldPrice": '5,800৳',
-      "DcPrice": '6%',
-      "DesName": 'DUALSHOCK 4 Wireless Controller',
-      "Description":'This is most comfortable, intuitive controller ever designed. Now even better, and available in a range of colours and styles.'
+      "Name" :'Blazer',
+      "Picture":'assets/images/product/blazer1.jpeg',
+      "Price":'4999',
+      "OldPrice":'7999',
+      "DcPrice":'37%',
+      "Description":''
     },
     {
-      "Name": 'White ps4 Console',
-      "Picture": 'assets/images/Ps/ps4_console_white_1.png',
-      "Price": '6,500৳',
-      "OldPrice": '6,800৳',
-      "DcPrice": '6%',
-      "DesName": 'DUALSHOCK 4 Wireless Controller',
-      "Description": 'This is most comfortable, intuitive controller ever designed. Now even better, and available in a range of colours and styles.'
-    },
-    {
-      "Name": 'White ps5 Console',
-      "Picture": 'assets/images/Ps/ps5_console_white_1.png',
-      "Price": '7,000৳',
-      "OldPrice": '7,800৳',
-      "DcPrice": '10%',
-      "DesName": 'DUALSHOCK 4 Wireless Controller',
-      "Description": 'The latest PlayStation 5 DualSense Wireless Controller offers immersive haptic feedback, dynamic adaptive triggers and a built-in microphone, all integrated into an iconic design. This Controller provides you physically responsive feedback to your in-game actions with dual actuators which replace traditional rumble motors. In your hands, This dynamic vibrations can simulate the feeling of everything from environments to the recoil of different weapons. This new The DualSense wireless controller retains many DUALSHOCK 4 features, returning for a new generation of play. You can connecting a headset to the 3.5-mm jack and Easily switch off voice capture at a moment\'s notice with the dedicated mute button. This Wireless Controller has built-in battery (Charge and play, now via USB Type-C) and also this controller has Integrated speaker, so that you can Select games take on an extra dimension with higher-fidelity sound effects bursting from the controller. Here, It Brings intuitive motion control to supported games with the built-in accelerometer and gyroscope. It\'s Experience varying levels of force and tension as you interact with your in-game gear and environments. From pulling back an increasingly tight bowstring to hitting the brakes on a speeding car, feel physically connected to your on-screen actions. With the create button, you can Capture and broadcast. Building on the success of the pioneering SHARE button, "create" offers players more ways to produce gaming content and broadcast their adventures live to the world. Take control with an evolved, two-tone design that combines an iconic, intuitive layout with enhanced sticks and a reimagined light bar. This PlayStation 5 DualSense Wireless Controller has no warranty.'
+      "Name" :'Blazer',
+      "Picture":'assets/images/product/blazer2.jpeg',
+      "Price":'6000',
+      "OldPrice":'12000',
+      "DcPrice":'50%',
+      "Description":''
     },
   ];
   var Index;
@@ -39,7 +27,7 @@ class Accessories extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text("Product list")),
+        title: Center(child: Text("Formal")),
         backgroundColor: Colors.cyan,
       ),
       body: ListView.builder(
@@ -56,10 +44,10 @@ class Accessories extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => AssoriesDisplay(
-                                    Index: index,
-                                    ProductList: ProductListtttt,
-                                  )));
+                              builder: (context) => FormalDisplay(
+                                Index: index,
+                                ProductList: ProductListtttt,
+                              )));
                     },
                     child: Container(
                       decoration: BoxDecoration(
@@ -89,14 +77,14 @@ class Accessories extends StatelessWidget {
                                   alignment: Alignment.topLeft,
                                   padding: EdgeInsets.only(left: 14),
                                   child:
-                                      Text('${ProductListtttt[index]['Name']}',
-                                          style: TextStyle(
-                                            fontSize: 20,
-                                            fontWeight: FontWeight.bold,
-                                          ))),
+                                  Text('${ProductListtttt[index]['Name']}',
+                                      style: TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold,
+                                      ))),
                               Row(
                                 mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                                MainAxisAlignment.spaceBetween,
                                 children: [
                                   SizedBox(
                                     height: 20,
@@ -137,7 +125,7 @@ class Accessories extends StatelessWidget {
                                             fontSize: 24,
                                             color: Colors.cyan,
                                             decoration:
-                                                TextDecoration.underline,
+                                            TextDecoration.underline,
                                             fontWeight: FontWeight.bold)),
                                   )
                                 ],
@@ -158,42 +146,3 @@ class Accessories extends StatelessWidget {
     );
   }
 }
-/*
-assets/images/Ps/ps4_console_white_2.png
-assets/images/Ps/ps4_console_white_3.png
-assets/images/Ps/ps4_console_white_4.png
-assets/images/Ps/ps4_console_blue_2.png
-assets/images/Ps/ps4_console_blue_3.png
-assets/images/Ps/ps4_console_blue_4.png
-
-
-class Accessories_display extends StatelessWidget {
-  final ProductList;
-
-int index;
-
-
-  Accessories_display({
-   required this.ProductList,
-
-required this.index
-
-
-});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        children: [
-          Flexible(child: Image.asset('${ProductList
-
-[index]
-
-['Picture']}'))
-        ],
-      ),
-    );
-  }
-}
-*/

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shipped/lists/Accessories/accessories_list.dart';
 import 'package:shipped/lists/Shoes/shoes_list.dart';
+import 'package:shipped/lists/formal/formal_list.dart';
 
 class HorizontalListview extends StatelessWidget {
   @override
@@ -30,7 +31,7 @@ class HorizontalListview extends StatelessWidget {
             child: cc(image_location: 'assets/images/accories/informal.png',
                 image_caption: 'informal'),
           ),
-          InkWell(onTap: (){},
+          InkWell(onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>FormalList()));},
             child: cc(image_location: 'assets/images/accories/formal.png',
                 image_caption: 'formal'),
           ),

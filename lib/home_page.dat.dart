@@ -6,7 +6,6 @@ import 'package:shipped/Custom_Widzed/mother_nbbar.dart';
 import 'package:shipped/components/carousel_slider.dart';
 import 'package:shipped/components/listview_horizontal.dart';
 import 'Iphones/appale_phones.dart';
-import 'Product list/list_view.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import '';
 

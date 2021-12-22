@@ -785,35 +785,35 @@ class IphoneListViewClass extends StatelessWidget {
                                         ),
                                         ListTile(
                                           title: Text("Model"),
-                                        subtitle: Text("12 pro max"),
+                                        subtitle: Text('${IphoneList[index]['Model']}'),
                                         ),
                                         ListTile(
                                           title: Text("RAM Memory"),
-                                        subtitle: Text(""),
+                                        subtitle: Text('${IphoneList[index]['Internal Memory']}'),
                                         ),
                                         ListTile(
                                           title: Text("Operating System"),
-                                        subtitle: Text(""),
+                                        subtitle: Text('${IphoneList[index]['Platform']}'),
                                         ),
                                         ListTile(
                                           title: Text("Storage Capacity"),
-                                        subtitle: Text(""),
+                                        subtitle: Text('${IphoneList[index]['Internal Memory']}'),
                                         ),
                                         ListTile(
                                           title: Text("Battery Capacity"),
-                                        subtitle: Text(""),
+                                        subtitle: Text('${IphoneList[index]['Battery']}'),
                                         ),
                                         ListTile(
                                           title: Text("Number of SIM"),
-                                        subtitle: Text(""),
+                                        subtitle: Text('${IphoneList[index]['SIM']}'),
                                         ),
                                         ListTile(
                                           title: Text("Camera (front)"),
-                                        subtitle: Text(""),
+                                        subtitle: Text('${IphoneList[index]['Selfie Camera']}'),
                                         ),
                                         ListTile(
                                           title: Text("Camera (back)"),
-                                        subtitle: Text(""),
+                                        subtitle: Text('${IphoneList[index]['Main Camera']}'),
                                         ),
 
                                       ],
