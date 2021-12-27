@@ -2,12 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:shipped/Custom_Widzed/mother_drawer.dart';
-import 'package:shipped/Custom_Widzed/mother_nbbar.dart';
 import 'package:shipped/components/carousel_slider.dart';
 import 'package:shipped/components/listview_horizontal.dart';
 import 'Iphones/appale_phones.dart';
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import '';
 
 class homepage extends StatefulWidget {
   @override
@@ -29,10 +26,7 @@ class _homepageState extends State<homepage> {
                 onPressed: () {},
                 icon: Icon(Icons.search)),
             IconButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => appaleMobile()));
-                },
+                onPressed: () {},
                 icon: Icon(Icons.shopping_cart))
           ],
         ),

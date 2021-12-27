@@ -19,7 +19,7 @@ class _forgotpassState extends State<forgotpass> {
     });
   }
 
-  String user_name = '';
+  String user_name = 'Tusher';
   @override
   void initState() {
     // TODO: implement initState
