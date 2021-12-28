@@ -649,7 +649,7 @@ class appaleMobile extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 10),
                       child: Text(
-                        '''USD ${IphoneList[index]['Price']}''',
+                        '''${IphoneList[index]['Price']}''',
                         style: TextStyle(color: Colors.blue, fontSize: 17),
                       ),
                     ),
@@ -716,14 +716,14 @@ class IphoneListViewClass extends StatelessWidget {
                     padding: const EdgeInsets.all(18.0),
                     child: Text(
                       '${IphoneList[index]['Name']}',
-                      style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
+                      style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                     ),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(left: 18),
                     child: Text(
                       '${IphoneList[index]['Price']}',
-                      style: TextStyle(fontSize: 24,color: Colors.cyan, fontWeight: FontWeight.w500),
+                      style: TextStyle(color: Colors.red, fontWeight: FontWeight.w500),
                     ),
                   ),
                 ],
