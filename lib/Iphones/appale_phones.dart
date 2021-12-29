@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:shipped/Product%20list/invoice_class.dart';
 
 class appaleMobile extends StatelessWidget {
   var IphoneList = [
     {
       "Product ID": 7731,
       "Picture": 'assets/images/Apple-iPhone-13-Pro-image.jpg',
-      "Price": '৳147,999 128GB \n ৳162,999 256GB',
+      "Price": '৳ 147,999 128GB \n৳ 162,999 256GB',
       "Retail Price": '',
       "Name": 'iPhone 13 Pro',
       "Model": 'Apple iPhone 13 PRO',
@@ -48,7 +50,7 @@ class appaleMobile extends StatelessWidget {
     {
       "Product ID": 7732,
       "Picture": 'assets/images/Apple-iPhone-13-Pro-Max-image.jpg',
-      "Price": '(1TB) 1,90,000',
+      "Price": '৳ 1,90,000 1TB',
       "Retail Price": '',
       "Name": 'iPhone 13 Pro Max',
       "Color": 'Graphite, Gold, Silver, Sierra Blue',
@@ -93,7 +95,7 @@ class appaleMobile extends StatelessWidget {
     {
       "Product ID": 7631,
       "Picture": 'assets/images/Apple-iPhone-13-image.jpg',
-      "Price": '৳133,499',
+      "Price": '৳ 133,499',
       "Retail Price": '',
       "Name": 'iPhone 13 256GB',
       "Model": 'Apple iPhone 13',
@@ -135,7 +137,7 @@ class appaleMobile extends StatelessWidget {
     {
       "Product ID": 7631,
       "Picture": 'assets/images/Apple-iPhone-13-Mini-image.jpg',
-      "Price": '৳133,999',
+      "Price": '৳ 133,999',
       "Retail Price": '',
       "Name": 'iPhone 13 mini 256GB',
       "Model": 'Apple iPhone 13 mini',
@@ -177,7 +179,7 @@ class appaleMobile extends StatelessWidget {
     {
       "Product ID": 7631,
       "Picture": 'assets/images/Apple-iphone-12-Pro.jpg',
-      "Price": '৳146,999',
+      "Price": '৳ 146,999',
       "Retail Price": '',
       "Name": 'Apple iPhone 12 Pro 128GB',
       "Model": 'Apple iPhone 12 PRO ',
@@ -220,7 +222,7 @@ class appaleMobile extends StatelessWidget {
     {
       "Product ID": 7631,
       "Picture": 'assets/images/Apple-iphone-12-Pro-Max.jpg',
-      "Price": '৳161,999 ',
+      "Price": '৳ 161,999 ',
       "Retail Price": '',
       "Name": 'Apple iPhone 12 Pro Max 128GB',
       "Model": 'Apple iPhone 12 PRO MAX',
@@ -263,7 +265,7 @@ class appaleMobile extends StatelessWidget {
     {
       "Product ID": 7631,
       "Picture": 'assets/images/Apple-iPhone-X-Grey.jpg',
-      "Price": '৳89,999.00',
+      "Price": '৳ 89,999.00',
       "Retail Price": '',
       "Name": 'Apple iPhone X',
       "Model": 'Apple iPhone X',
@@ -306,7 +308,7 @@ class appaleMobile extends StatelessWidget {
     {
       "Product ID": 7721,
       "Picture": 'assets/images/Apple-iPhone-11.jpg',
-      "Price": '৳87,999 64 GB \n ৳93,999 128 GB \n ৳99,999 256 GB',
+      "Price": '৳ 93,999 128 GB \n৳ 99,999 256 GB',
       "Retail Price": '',
       "Name": 'Apple iPhone 11',
       "Color": 'Black, Green, Yellow, Purple, Red, White',
@@ -351,7 +353,7 @@ class appaleMobile extends StatelessWidget {
     {
       "Product ID": 7631,
       "Picture": 'assets/images/Apple-iPhone-X-Grey.jpg',
-      "Price": '৳79,999.00',
+      "Price": '৳ 79,999.00',
       "Retail Price": '',
       "Name": 'Apple iPhone X',
       "Model": 'Apple iPhone X',
@@ -394,7 +396,7 @@ class appaleMobile extends StatelessWidget {
     {
       "Product ID": 7631,
       "Picture": 'assets/images/Apple-iPhone-13-image.jpg',
-      "Price": '৳133,499',
+      "Price": '৳ 133,499',
       "Retail Price": '',
       "Name": 'iPhone 13 256GB',
       "Model": 'Apple iPhone 13',
@@ -436,7 +438,7 @@ class appaleMobile extends StatelessWidget {
     {
       "Product ID": 7631,
       "Picture": 'assets/images/Apple-iPhone-13-Mini-image.jpg',
-      "Price": '৳133,999',
+      "Price": '৳ 133,999',
       "Retail Price": '',
       "Name": 'iPhone 13 mini 256GB',
       "Model": 'Apple iPhone 13 mini',
@@ -478,7 +480,7 @@ class appaleMobile extends StatelessWidget {
     {
       "Product ID": 7631,
       "Picture": 'assets/images/Apple-iphone-12-Pro.jpg',
-      "Price": '৳161,999',
+      "Price": '৳ 161,999',
       "Retail Price": '',
       "Name": 'iPhone 12 Pro 128GB',
       "Model": 'iPhone 12 Pro 128GB',
@@ -518,7 +520,7 @@ class appaleMobile extends StatelessWidget {
     {
       "Product ID": 7721,
       "Picture": 'assets/images/Apple-iPhone-XS-Max-Gold.jpg',
-      "Price": '৳87,999 64 GB \n ৳93,999 128 GB \n ৳99,999 256 GB',
+      "Price": '৳ 93,999 128 GB \n৳ 99,999 256 GB',
       "Retail Price": '',
       "Name": 'Apple iPhone 11',
       "Color": 'Gold',
@@ -559,7 +561,7 @@ class appaleMobile extends StatelessWidget {
     {
       "Product ID": 7631,
       "Picture": 'assets/images/Apple-iPhone-X-Grey.jpg',
-      "Price": '৳51,990',
+      "Price": '৳ 51,990',
       "Retail Price": '',
       "Name": 'Apple iPhone X',
       "Model": 'Apple iPhone X',
@@ -687,65 +689,70 @@ class appaleMobile extends StatelessWidget {
   }
 }
 
-class IphoneListViewClass extends StatelessWidget {
+class IphoneListViewClass extends StatefulWidget {
   final IphoneList;
   final index;
   IphoneListViewClass({required this.IphoneList, required this.index});
 
   @override
+  State<IphoneListViewClass> createState() => _IphoneListViewClassState();
+}
+
+class _IphoneListViewClassState extends State<IphoneListViewClass> {
+  int counter = 0;
+  @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-        body: Container(
-      height: size.height,
-      width: size.width,
+        body: SafeArea(
       child: Column(
         children: [
           Flexible(
             flex: 4,
             child: Container(
-              child: Image.asset('${IphoneList[index]['Picture']}'),
+              child:
+                  Image.asset('${widget.IphoneList[widget.index]['Picture']}'),
             ),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          Column(
             children: [
-              Column(crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(18.0),
-                    child: Text(
-                      '${IphoneList[index]['Name']}',
-                      style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 18),
-                    child: Text(
-                      '${IphoneList[index]['Price']}',
-                      style: TextStyle(color: Colors.red, fontWeight: FontWeight.w500),
-                    ),
-                  ),
-                ],
+              Text(
+                ' ${widget.IphoneList[widget.index]['Name']}',
+                style: GoogleFonts.ubuntu(
+                    textStyle: TextStyle(
+                        fontSize: 32,
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold)),
               ),
-
-              InkWell(
-                onTap: () {},
-                child: Container(
-                  padding: EdgeInsets.only(left: 3),
-                  height: size.height * .05,
-                  width: size.width * .13,
-                  decoration: BoxDecoration(
-                      color: Colors.red[200],
-                      borderRadius: BorderRadius.circular(10)),
-                  child: IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.favorite,
-                        color: Colors.red,
-                        size: 24,
-                      )),
-                ),
+              Divider(),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    height: size.height *.06,
+                    width: size.width / 2.5,
+                    decoration: BoxDecoration(
+                        color: Colors.cyan, borderRadius: BorderRadius.only(
+                        bottomRight: Radius.circular(20)
+                    )),
+                    child: Center(
+                      child: Text(
+                        '${widget.IphoneList[widget.index]['Price']}',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ),
+                  RatingBar.builder(
+                      itemSize: 25,
+                      maxRating: 1,
+                      itemBuilder: (context, _) => Icon(
+                        Icons.star,
+                        color: Colors.amber,
+                      ),
+                      onRatingUpdate: (rating) {})
+                ],
               )
             ],
           ),
@@ -775,50 +782,59 @@ class IphoneListViewClass extends StatelessWidget {
                             children: [
                               InkWell(
                                 onTap: () {
-                                  showModalBottomSheet(context: context, builder: (context){
-                                    return ListView(
-                                      children: [
-                                        ListTile(
-                                          title: Text("Brand"),
-                                        subtitle: Text(""
-                                            "Appale"),
-                                        ),
-                                        ListTile(
-                                          title: Text("Model"),
-                                        subtitle: Text('${IphoneList[index]['Model']}'),
-                                        ),
-                                        ListTile(
-                                          title: Text("RAM Memory"),
-                                        subtitle: Text('${IphoneList[index]['Internal Memory']}'),
-                                        ),
-                                        ListTile(
-                                          title: Text("Operating System"),
-                                        subtitle: Text('${IphoneList[index]['Platform']}'),
-                                        ),
-                                        ListTile(
-                                          title: Text("Storage Capacity"),
-                                        subtitle: Text('${IphoneList[index]['Internal Memory']}'),
-                                        ),
-                                        ListTile(
-                                          title: Text("Battery Capacity"),
-                                        subtitle: Text('${IphoneList[index]['Battery']}'),
-                                        ),
-                                        ListTile(
-                                          title: Text("Number of SIM"),
-                                        subtitle: Text('${IphoneList[index]['SIM']}'),
-                                        ),
-                                        ListTile(
-                                          title: Text("Camera (front)"),
-                                        subtitle: Text('${IphoneList[index]['Selfie Camera']}'),
-                                        ),
-                                        ListTile(
-                                          title: Text("Camera (back)"),
-                                        subtitle: Text('${IphoneList[index]['Main Camera']}'),
-                                        ),
-
-                                      ],
-                                    );
-                                  });
+                                  showModalBottomSheet(
+                                      context: context,
+                                      builder: (context) {
+                                        return ListView(
+                                          children: [
+                                            ListTile(
+                                              title: Text("Brand"),
+                                              subtitle: Text(""
+                                                  " Appale"),
+                                            ),
+                                            ListTile(
+                                              title: Text("Model"),
+                                              subtitle: Text(
+                                                  ' ${widget.IphoneList[widget.index]['Model']}'),
+                                            ),
+                                            ListTile(
+                                              title: Text("RAM Memory"),
+                                              subtitle: Text(
+                                                  ' ${widget.IphoneList[widget.index]['Internal Memory']}'),
+                                            ),
+                                            ListTile(
+                                              title: Text("Operating System"),
+                                              subtitle: Text(
+                                                  ' ${widget.IphoneList[widget.index]['Platform']}'),
+                                            ),
+                                            ListTile(
+                                              title: Text("Storage Capacity"),
+                                              subtitle: Text(
+                                                  ' ${widget.IphoneList[widget.index]['Internal Memory']}'),
+                                            ),
+                                            ListTile(
+                                              title: Text("Battery Capacity"),
+                                              subtitle: Text(
+                                                  ' ${widget.IphoneList[widget.index]['Battery']}'),
+                                            ),
+                                            ListTile(
+                                              title: Text("Number of SIM"),
+                                              subtitle: Text(
+                                                  '${widget.IphoneList[widget.index]['SIM']}'),
+                                            ),
+                                            ListTile(
+                                              title: Text("Camera (front)"),
+                                              subtitle: Text(
+                                                  ' ${widget.IphoneList[widget.index]['Selfie Camera']}'),
+                                            ),
+                                            ListTile(
+                                              title: Text("Camera (back)"),
+                                              subtitle: Text(
+                                                  ' ${widget.IphoneList[widget.index]['Main Camera']}'),
+                                            ),
+                                          ],
+                                        );
+                                      });
                                 },
                                 child: Text("Brand,RAM Memory,Operating System",
                                     style: TextStyle(color: Colors.black87)),
@@ -842,12 +858,14 @@ class IphoneListViewClass extends StatelessWidget {
                             style:
                                 TextStyle(fontSize: 18, color: Colors.black45),
                           ),
-                          Row(children: [
-                            Text(
-                                "Up to 12 months, as low as 12,444 taka\n  per month.",
-                                style: TextStyle(color: Color(0xFF363636))),
-                            Icon(Icons.arrow_right)
-                          ],)
+                          Row(
+                            children: [
+                              Text(
+                                  "Up to 12 months, as low as 12,444 taka\n  per month.",
+                                  style: TextStyle(color: Color(0xFF363636))),
+                              Icon(Icons.arrow_right)
+                            ],
+                          )
                         ],
                       ),
                       SizedBox(
@@ -879,15 +897,21 @@ class IphoneListViewClass extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("Service",style: TextStyle(fontSize: 18,color: Colors.black45),),
+                          Text(
+                            "Service",
+                            style:
+                                TextStyle(fontSize: 18, color: Colors.black45),
+                          ),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                            Text("100% Authentic"),
-                            Text("10 days easy return"),
-                            Text("1 Year Brand Warrenty"),
-                          ],),
-                          Icon(Icons.arrow_right)],
+                              Text("100% Authentic"),
+                              Text("10 days easy return"),
+                              Text("1 Year Brand Warrenty"),
+                            ],
+                          ),
+                          Icon(Icons.arrow_right)
+                        ],
                       ),
                       SizedBox(
                         height: size.height * .03,
@@ -901,6 +925,77 @@ class IphoneListViewClass extends StatelessWidget {
               ),
             ),
           ),
+          Container(
+            decoration: BoxDecoration(
+                border: Border.all(width: 1, color: Colors.black)),
+            height: size.height * .07,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  children: [
+                    TextButton(
+                      onPressed: () {
+                        setState(() {
+                          if (counter >= 1) {
+                            counter--;
+                          }
+                        });
+                      },
+                      child: Text(
+                        "-",
+                        style: TextStyle(color: Colors.black, fontSize: 32),
+                      ),
+                    ),
+                    VerticalDivider(
+                      thickness: 1,
+                    ),
+                    Text(
+                      "$counter",
+                      style: TextStyle(fontSize: 24),
+                    ),
+                    VerticalDivider(
+                      thickness: 1,
+                    ),
+                    TextButton(
+                      onPressed: () {
+                        setState(() {
+                          if (counter < 10) {
+                            counter++;
+                          }
+                        });
+                      },
+                      child: Text("+",
+                          style: TextStyle(color: Colors.black, fontSize: 20)),
+                    ),
+                  ],
+                ),
+                Flexible(
+                  flex: 1,
+                  child: Container(
+                    decoration: BoxDecoration(
+                        color: Colors.cyan,
+                        borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(20),),
+                        border: Border.all(width: 1, color: Colors.cyan)),
+                    child: TextButton(
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => invoice()));
+                      },
+                      child: Text(
+                        'Order now',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
+                      ),
+                    ),
+                  ),
+                )
+              ],
+            ),
+          )
         ],
       ),
     ));

@@ -52,119 +52,131 @@ class Accessories extends StatelessWidget {
         backgroundColor: Colors.cyan,
       ),
       body: ListView.builder(
-          cacheExtent: 100,
+        itemExtent: 400,
+          padding: EdgeInsets.all(20.0),
           physics: BouncingScrollPhysics(),
           itemCount: ProductListtttt.length,
           itemBuilder: (context, index) {
             return Column(
               children: [
-                Padding(
-                  padding: const EdgeInsets.all(18.0),
-                  child: InkWell(
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) =>
-                                  AssoriesDisplay(
-                                    Index: index,
-                                    ProductList: ProductListtttt,
-                                  )));
-                    },
-                    child: Container(
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(10),
-                          boxShadow: [
-                            BoxShadow(
-                                color: Colors.grey.withOpacity(0.5),
-                                spreadRadius: 2,
-                                blurRadius: 2,
-                                offset: Offset(0, 3))
-                          ]),
-                      child: Column(
-                        children: [
-                          Container(
-                            height: MediaQuery
-                                .of(context)
-                                .size
-                                .height * 0.2,
-                            width: double.infinity,
-                            child: Image.asset(
-                              '${ProductListtttt[index]['Picture']}',
-                              fit: BoxFit.fitHeight,
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) =>
+                                AssoriesDisplay(
+                                  Index: index,
+                                  ProductList: ProductListtttt,
+                                )));
+                  },
+                  child: Container(padding: EdgeInsets.all(20.0),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                        boxShadow: [
+                          BoxShadow(
+                              color: Colors.grey.withOpacity(0.5),
+                              spreadRadius: 2,
+                              blurRadius: 2,
+                              offset: Offset(0, 3))
+                        ]),
+                    child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("    DISCOUNT  DISCOUNT  DISCOUNT  DISCOUNT ",style: TextStyle(
+                          decoration: TextDecoration.underline,
+                        ),),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text('${ProductListtttt[index]['DcPrice']}',
+                              style: TextStyle(fontWeight: FontWeight.bold,color: Colors.amber,fontSize: 32),
                             ),
+                            Text('${ProductListtttt[index]['DcPrice']}',
+                              style: TextStyle(fontWeight: FontWeight.bold,color: Colors.amber,fontSize: 32),
+                            ),
+                          ],
+                        ),
+                        Divider(
+                          thickness: 2,
+                        ),
+                        Container(
+                          height: MediaQuery
+                              .of(context)
+                              .size
+                              .height * 0.2,
+                          width: double.infinity,
+                          child: Image.asset(
+                            '${ProductListtttt[index]['Picture']}',
+                            fit: BoxFit.fitHeight,
                           ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Container(
-                                  alignment: Alignment.topLeft,
-                                  padding: EdgeInsets.only(left: 14),
-                                  child:
-                                  Text('${ProductListtttt[index]['Name']}',
-                                      style: TextStyle(
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.bold,
-                                      ))),
-                              Row(
-                                mainAxisAlignment:
-                                MainAxisAlignment.spaceBetween,
-                                children: [
-                                  SizedBox(
-                                    height: 20,
-                                  ),
-                                  Text(
-                                    ''' ${ProductListtttt[index]['Price']}''',
-                                    style: TextStyle(
-                                      color: Colors.cyan,
-                                      fontSize: 17,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 10,
-                                  ),
-                                  Text(
-                                    '${ProductListtttt[index]['OldPrice']}',
-                                    style: TextStyle(
-                                        color: Colors.deepOrange,
-                                        fontWeight: FontWeight.bold,
-                                        decoration: TextDecoration.lineThrough),
-                                  )
-                                ],
-                              ),
-                              Text('${ProductListtttt[index]['DcPrice']}')
-                            ],
-                          ),
-                          Container(
-                            padding: EdgeInsets.only(left: 20, top: 10),
-                            child: InkWell(
-                              onTap: () {},
-                              child: Row(
-                                children: [
-                                  Text(
-                                    "Order now",
-                                    style: GoogleFonts.roboto(
-                                        textStyle: TextStyle(
-                                            fontSize: 24,
-                                            color: Colors.cyan,
-                                            decoration:
-                                            TextDecoration.underline,
-                                            fontWeight: FontWeight.bold)),
-                                  )
-                                ],
+                        ),
+                        Container(
+                            alignment: Alignment.topLeft,
+                            padding: EdgeInsets.only(left: 14),
+                            child:
+                            Center(
+                              child: Text('${ProductListtttt[index]['Name']}',
+                                  style: TextStyle(
+                                    fontSize: 32,
+                                    fontWeight: FontWeight.bold,
+                                      decoration: TextDecoration.underline
+                                  )),
+                            )),
+                        SizedBox(
+                          height: MediaQuery.of(context).size.height*.03,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              ''' ${ProductListtttt[index]['Price']}''',
+                              style: TextStyle(
+                                color: Colors.cyan,
+                                fontSize: 17,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
-                          )
-                        ],
-                      ),
+                            Row(crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Text('Regular Price=  ',
+                                style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+                                Text(
+                              '${ProductListtttt[index]['OldPrice']}',
+                              style: TextStyle(
+                                  color: Colors.amber,
+                                  fontWeight: FontWeight.bold,
+                                  decoration: TextDecoration.lineThrough),
+                            ),
+                              ],
+                            )
+
+                          ],
+                        ),
+                       /*Container(
+                          padding: EdgeInsets.only(left: 20, top: 10),
+                          child: InkWell(
+                            onTap: () {},
+                            child: Row(
+                              children: [
+                                Text(
+                                  "Order now",
+                                  style: GoogleFonts.roboto(
+                                      textStyle: TextStyle(
+                                          fontSize: 24,
+                                          color: Colors.cyan,
+                                          decoration:
+                                          TextDecoration.underline,
+                                          fontWeight: FontWeight.bold)),
+                                )
+                              ],
+                            ),
+                          ),
+                        )*/
+                      ],
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 10,
-                )
               ],
             );
           }),
