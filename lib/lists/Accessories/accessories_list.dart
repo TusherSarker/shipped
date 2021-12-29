@@ -12,7 +12,8 @@ class Accessories extends StatelessWidget {
       "OldPrice": '5,800৳',
       "DcPrice": '6%',
       "DesName": 'DUALSHOCK 4 Wireless Controller',
-      "Description": 'This is most comfortable, intuitive controller ever designed. Now even better, and available in a range of colours and styles.'
+      "Description":
+          'This is most comfortable, intuitive controller ever designed. Now even better, and available in a range of colours and styles.'
     },
     {
       "Name": 'White ps4 Console',
@@ -21,7 +22,8 @@ class Accessories extends StatelessWidget {
       "OldPrice": '6,800৳',
       "DcPrice": '6%',
       "DesName": 'DUALSHOCK 4 Wireless Controller',
-      "Description": 'This is most comfortable, intuitive controller ever designed. Now even better, and available in a range of colours and styles.'
+      "Description":
+          'This is most comfortable, intuitive controller ever designed. Now even better, and available in a range of colours and styles.'
     },
     {
       "Name": 'White ps5 Console',
@@ -30,7 +32,8 @@ class Accessories extends StatelessWidget {
       "OldPrice": '7,800৳',
       "DcPrice": '10%',
       "DesName": 'DUALSHOCK 4 Wireless Controller',
-      "Description": 'The latest PlayStation 5 DualSense Wireless Controller offers immersive haptic feedback, dynamic adaptive triggers and a built-in microphone, all integrated into an iconic design. This Controller provides you physically responsive feedback to your in-game actions with dual actuators which replace traditional rumble motors. In your hands, This dynamic vibrations can simulate the feeling of everything from environments to the recoil of different weapons. This new The DualSense wireless controller retains many DUALSHOCK 4 features, returning for a new generation of play. You can connecting a headset to the 3.5-mm jack and Easily switch off voice capture at a moment\'s notice with the dedicated mute button. This Wireless Controller has built-in battery (Charge and play, now via USB Type-C) and also this controller has Integrated speaker, so that you can Select games take on an extra dimension with higher-fidelity sound effects bursting from the controller. Here, It Brings intuitive motion control to supported games with the built-in accelerometer and gyroscope. It\'s Experience varying levels of force and tension as you interact with your in-game gear and environments. From pulling back an increasingly tight bowstring to hitting the brakes on a speeding car, feel physically connected to your on-screen actions. With the create button, you can Capture and broadcast. Building on the success of the pioneering SHARE button, "create" offers players more ways to produce gaming content and broadcast their adventures live to the world. Take control with an evolved, two-tone design that combines an iconic, intuitive layout with enhanced sticks and a reimagined light bar. This PlayStation 5 DualSense Wireless Controller has no warranty.'
+      "Description":
+          'The latest PlayStation 5 DualSense Wireless Controller offers immersive haptic feedback, dynamic adaptive triggers and a built-in microphone, all integrated into an iconic design. This Controller provides you physically responsive feedback to your in-game actions with dual actuators which replace traditional rumble motors. In your hands, This dynamic vibrations can simulate the feeling of everything from environments to the recoil of different weapons. This new The DualSense wireless controller retains many DUALSHOCK 4 features, returning for a new generation of play. You can connecting a headset to the 3.5-mm jack and Easily switch off voice capture at a moment\'s notice with the dedicated mute button. This Wireless Controller has built-in battery (Charge and play, now via USB Type-C) and also this controller has Integrated speaker, so that you can Select games take on an extra dimension with higher-fidelity sound effects bursting from the controller. Here, It Brings intuitive motion control to supported games with the built-in accelerometer and gyroscope. It\'s Experience varying levels of force and tension as you interact with your in-game gear and environments. From pulling back an increasingly tight bowstring to hitting the brakes on a speeding car, feel physically connected to your on-screen actions. With the create button, you can Capture and broadcast. Building on the success of the pioneering SHARE button, "create" offers players more ways to produce gaming content and broadcast their adventures live to the world. Take control with an evolved, two-tone design that combines an iconic, intuitive layout with enhanced sticks and a reimagined light bar. This PlayStation 5 DualSense Wireless Controller has no warranty.'
     },
     {
       "Name": 'White ps5 Console',
@@ -39,7 +42,8 @@ class Accessories extends StatelessWidget {
       "OldPrice": '7,800৳',
       "DcPrice": '10%',
       "DesName": 'DUALSHOCK 4 Wireless Controller',
-      "Description": 'The latest PlayStation 5 DualSense Wireless Controller offers immersive haptic feedback, dynamic adaptive triggers and a built-in microphone, all integrated into an iconic design. This Controller provides you physically responsive feedback to your in-game actions with dual actuators which replace traditional rumble motors. In your hands, This dynamic vibrations can simulate the feeling of everything from environments to the recoil of different weapons. This new The DualSense wireless controller retains many DUALSHOCK 4 features, returning for a new generation of play. You can connecting a headset to the 3.5-mm jack and Easily switch off voice capture at a moment\'s notice with the dedicated mute button. This Wireless Controller has built-in battery (Charge and play, now via USB Type-C) and also this controller has Integrated speaker, so that you can Select games take on an extra dimension with higher-fidelity sound effects bursting from the controller. Here, It Brings intuitive motion control to supported games with the built-in accelerometer and gyroscope. It\'s Experience varying levels of force and tension as you interact with your in-game gear and environments. From pulling back an increasingly tight bowstring to hitting the brakes on a speeding car, feel physically connected to your on-screen actions. With the create button, you can Capture and broadcast. Building on the success of the pioneering SHARE button, "create" offers players more ways to produce gaming content and broadcast their adventures live to the world. Take control with an evolved, two-tone design that combines an iconic, intuitive layout with enhanced sticks and a reimagined light bar. This PlayStation 5 DualSense Wireless Controller has no warranty.'
+      "Description":
+          'The latest PlayStation 5 DualSense Wireless Controller offers immersive haptic feedback, dynamic adaptive triggers and a built-in microphone, all integrated into an iconic design. This Controller provides you physically responsive feedback to your in-game actions with dual actuators which replace traditional rumble motors. In your hands, This dynamic vibrations can simulate the feeling of everything from environments to the recoil of different weapons. This new The DualSense wireless controller retains many DUALSHOCK 4 features, returning for a new generation of play. You can connecting a headset to the 3.5-mm jack and Easily switch off voice capture at a moment\'s notice with the dedicated mute button. This Wireless Controller has built-in battery (Charge and play, now via USB Type-C) and also this controller has Integrated speaker, so that you can Select games take on an extra dimension with higher-fidelity sound effects bursting from the controller. Here, It Brings intuitive motion control to supported games with the built-in accelerometer and gyroscope. It\'s Experience varying levels of force and tension as you interact with your in-game gear and environments. From pulling back an increasingly tight bowstring to hitting the brakes on a speeding car, feel physically connected to your on-screen actions. With the create button, you can Capture and broadcast. Building on the success of the pioneering SHARE button, "create" offers players more ways to produce gaming content and broadcast their adventures live to the world. Take control with an evolved, two-tone design that combines an iconic, intuitive layout with enhanced sticks and a reimagined light bar. This PlayStation 5 DualSense Wireless Controller has no warranty.'
     },
   ];
   var Index;
@@ -52,7 +56,7 @@ class Accessories extends StatelessWidget {
         backgroundColor: Colors.cyan,
       ),
       body: ListView.builder(
-        itemExtent: 400,
+          itemExtent: 400,
           padding: EdgeInsets.all(20.0),
           physics: BouncingScrollPhysics(),
           itemCount: ProductListtttt.length,
@@ -64,13 +68,13 @@ class Accessories extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) =>
-                                AssoriesDisplay(
+                            builder: (context) => AssoriesDisplay(
                                   Index: index,
                                   ProductList: ProductListtttt,
                                 )));
                   },
-                  child: Container(padding: EdgeInsets.all(20.0),
+                  child: Container(
+                    padding: EdgeInsets.all(20.0),
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(10),
@@ -81,19 +85,31 @@ class Accessories extends StatelessWidget {
                               blurRadius: 2,
                               offset: Offset(0, 3))
                         ]),
-                    child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("    DISCOUNT  DISCOUNT  DISCOUNT  DISCOUNT ",style: TextStyle(
-                          decoration: TextDecoration.underline,
-                        ),),
+                        Text(
+                          "    DISCOUNT  DISCOUNT  DISCOUNT  DISCOUNT ",
+                          style: TextStyle(
+                            decoration: TextDecoration.underline,
+                          ),
+                        ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text('${ProductListtttt[index]['DcPrice']}',
-                              style: TextStyle(fontWeight: FontWeight.bold,color: Colors.amber,fontSize: 32),
+                            Text(
+                              '${ProductListtttt[index]['DcPrice']}',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.amber,
+                                  fontSize: 32),
                             ),
-                            Text('${ProductListtttt[index]['DcPrice']}',
-                              style: TextStyle(fontWeight: FontWeight.bold,color: Colors.amber,fontSize: 32),
+                            Text(
+                              '${ProductListtttt[index]['DcPrice']}',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.amber,
+                                  fontSize: 32),
                             ),
                           ],
                         ),
@@ -101,10 +117,7 @@ class Accessories extends StatelessWidget {
                           thickness: 2,
                         ),
                         Container(
-                          height: MediaQuery
-                              .of(context)
-                              .size
-                              .height * 0.2,
+                          height: MediaQuery.of(context).size.height * 0.2,
                           width: double.infinity,
                           child: Image.asset(
                             '${ProductListtttt[index]['Picture']}',
@@ -114,17 +127,15 @@ class Accessories extends StatelessWidget {
                         Container(
                             alignment: Alignment.topLeft,
                             padding: EdgeInsets.only(left: 14),
-                            child:
-                            Center(
+                            child: Center(
                               child: Text('${ProductListtttt[index]['Name']}',
                                   style: TextStyle(
-                                    fontSize: 32,
-                                    fontWeight: FontWeight.bold,
-                                      decoration: TextDecoration.underline
-                                  )),
+                                      fontSize: 32,
+                                      fontWeight: FontWeight.bold,
+                                      decoration: TextDecoration.underline)),
                             )),
                         SizedBox(
-                          height: MediaQuery.of(context).size.height*.03,
+                          height: MediaQuery.of(context).size.height * .03,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -137,23 +148,27 @@ class Accessories extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            Row(crossAxisAlignment: CrossAxisAlignment.end,
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
-                                Text('Regular Price=  ',
-                                style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
                                 Text(
-                              '${ProductListtttt[index]['OldPrice']}',
-                              style: TextStyle(
-                                  color: Colors.amber,
-                                  fontWeight: FontWeight.bold,
-                                  decoration: TextDecoration.lineThrough),
-                            ),
+                                  'Regular Price=  ',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20),
+                                ),
+                                Text(
+                                  '${ProductListtttt[index]['OldPrice']}',
+                                  style: TextStyle(
+                                      color: Colors.amber,
+                                      fontWeight: FontWeight.bold,
+                                      decoration: TextDecoration.lineThrough),
+                                ),
                               ],
                             )
-
                           ],
                         ),
-                       /*Container(
+                        /*Container(
                           padding: EdgeInsets.only(left: 20, top: 10),
                           child: InkWell(
                             onTap: () {},
