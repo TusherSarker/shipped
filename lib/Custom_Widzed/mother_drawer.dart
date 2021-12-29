@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:image_picker/image_picker.dart';
 
+import '../home_page.dat.dart';
+
 class MotherDrawer extends StatefulWidget {
   const MotherDrawer({Key? key}) : super(key: key);
 
@@ -59,7 +61,9 @@ class _MotherDrawerState extends State<MotherDrawer> {
             ),
           ),
           InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>homepage()));
+            },
             child: const ListTile(
               title: Text("HomePage"),
               leading: Icon(Icons.home, color: Colors.blueGrey),
