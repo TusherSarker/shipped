@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shipped/lists/Accessories/accessories_list.dart';
+import 'package:shipped/lists/Dress/dress_list.dart';
 import 'package:shipped/lists/Shoes/shoes_list.dart';
 import 'package:shipped/lists/formal/formal_list.dart';
 
@@ -13,37 +14,42 @@ class HorizontalListview extends StatelessWidget {
         physics: BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
         children: [
-          InkWell(onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>Accessories()));
-          },
-            child: cc(image_location: 'assets/images/accories/accessories.png',
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Accessories()));
+            },
+            child: cc(
+                image_location: 'assets/images/accories/accessories.png',
                 image_caption: 'accessories'),
           ),
-          InkWell(onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>Shoes()));
-          },
-            child: cc(image_location: 'assets/images/accories/shoe.png',
+          InkWell(
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Shoes()));
+            },
+            child: cc(
+                image_location: 'assets/images/accories/shoe.png',
                 image_caption: 'shoes'),
           ),
-          InkWell(onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>FormalList()));},
-            child: cc(image_location: 'assets/images/accories/formal.png',
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => FormalList()));
+            },
+            child: cc(
+                image_location: 'assets/images/accories/formal.png',
                 image_caption: 'formal'),
           ),
-          InkWell(onTap: (){},
-            child: cc(image_location: 'assets/images/accories/jeans.png',
-                image_caption: 'jeans'),
-          ),
-          InkWell(onTap: (){},
-            child: cc(image_location: 'assets/images/accories/informal.png',
-                image_caption: 'informal'),
-          ),
-          InkWell(onTap: (){},
-            child: cc(image_location: 'assets/images/accories/tshirt.png',
-                image_caption: 'tshirt'),
-          ),
-          InkWell(onTap: (){},
-            child: cc(image_location: 'assets/images/accories/dress.png',
-                image_caption: 'dress',),
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DressList()));
+            },
+            child: cc(
+              image_location: 'assets/images/accories/dress.png',
+              image_caption: 'dress',
+            ),
           )
         ],
       ),
@@ -61,12 +67,14 @@ class cc extends StatelessWidget {
       child: Container(
         width: MediaQuery.of(context).size.width / 2.7,
         child: ListTile(
-          title: Image.asset(image_location,
-          height: MediaQuery.of(context).size.height / 20,
+          title: Image.asset(
+            image_location,
+            height: MediaQuery.of(context).size.height / 20,
           ),
           subtitle: Padding(
-            padding: EdgeInsets.only(left: MediaQuery.of(context).size.width*0.09,
-                top: MediaQuery.of(context).size.height*0.002),
+            padding: EdgeInsets.only(
+                left: MediaQuery.of(context).size.width * 0.09,
+                top: MediaQuery.of(context).size.height * 0.002),
             child: Text(image_caption),
           ),
         ),

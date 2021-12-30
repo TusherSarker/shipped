@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home_page.dat.dart';
+import 'package:shipped/screen/welcome/welcome.dart';
 void main() {
   runApp(MyApp());
 }
@@ -10,6 +10,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: "Shipped",
         debugShowCheckedModeBanner: false,
-        home: homepage());
+        home: WelcomeScreen());
   }
 }

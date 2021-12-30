@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:shipped/screen/about_us.dart';
 
 import '../home_page.dat.dart';
 
@@ -62,7 +63,8 @@ class _MotherDrawerState extends State<MotherDrawer> {
           ),
           InkWell(
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>homepage()));
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => homepage()));
             },
             child: const ListTile(
               title: Text("HomePage"),
@@ -108,7 +110,10 @@ class _MotherDrawerState extends State<MotherDrawer> {
             ),
           ),
           InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => AboutUs()));
+            },
             child: const ListTile(
               title: Text("About Us"),
               leading: Icon(Icons.help, color: Colors.green),
@@ -145,16 +150,16 @@ class _MotherDrawerState extends State<MotherDrawer> {
       width: 480,
       child: imageFile == null
           ? Icon(
-        Icons.camera_alt_outlined,
-        size: 100,
-      )
+              Icons.camera_alt_outlined,
+              size: 100,
+            )
           : ClipRRect(
-        borderRadius: BorderRadius.circular(150),
-        child: Image.file(
-          imageFile!,
-          fit: BoxFit.fill,
-        ),
-      ),
+              borderRadius: BorderRadius.circular(150),
+              child: Image.file(
+                imageFile!,
+                fit: BoxFit.fill,
+              ),
+            ),
     );
   }
 }
